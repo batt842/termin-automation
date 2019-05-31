@@ -1,0 +1,71 @@
+{
+  "Name": "Termin_check_empty",
+  "CreationDate": "2019-6-1",
+  "Commands": [
+    {
+      "Command": "while",
+      "Target": "true",
+      "Value": ""
+    },
+    {
+      "Command": "clickAndWait",
+      "Target": "xpath=//*[@id=\"txtNextpage\"]",
+      "Value": ""
+    },
+    {
+      "Command": "verifyElementPresent",
+      "Target": "xpath=//a[@link=\"1\"]",
+      "Value": ""
+    },
+    {
+      "Command": "if",
+      "Target": "${!statusOK} == true",
+      "Value": ""
+    },
+    {
+      "Command": "bringBrowserToForeground",
+      "Target": "",
+      "Value": ""
+    },
+    {
+      "Command": "selectWindow",
+      "Target": "TAB=OPEN",
+      "Value": "https://www.youtube.com/watch?v=Z7klyQsmVa8"
+    },
+    {
+      "Command": "gotoLabel",
+      "Target": "END",
+      "Value": ""
+    },
+    {
+      "Command": "endif",
+      "Target": "",
+      "Value": ""
+    },
+    {
+      "Command": "pause",
+      "Target": "150000",
+      "Value": ""
+    },
+    {
+      "Command": "clickAndWait",
+      "Target": "xpath=//*[@id=\"txtPrevpage\"]/span",
+      "Value": ""
+    },
+    {
+      "Command": "pause",
+      "Target": "150000",
+      "Value": ""
+    },
+    {
+      "Command": "endWhile",
+      "Target": "",
+      "Value": ""
+    },
+    {
+      "Command": "label",
+      "Target": "END",
+      "Value": ""
+    }
+  ]
+}
